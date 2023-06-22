@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+
+    <div class="cantainer">
+        <h1>🤩 Play Ludo 🤩</h1>
+
+        <div class="dice-box">
+            <div class="dice">
+                <p>Player 1</p>
+                <img src="./image/dice1.png" alt="" id="check1">
+            </div>
+
+            <div class="dice">
+                <p>Player 2</p>
+                <img src="./image/dice1.png" alt="" id="check2">
+            </div>
+
+            <div class="button" >
+                <button  onclick="playingbtn(), sound()">Start</button>
+            </div>
+        </div>   <!--Dice Box Closing-->
+    </div>  <!--Cantainer Close-->
+
+
+<!-- --------------------------------JavaScript Editing-------------------------------------- -->
+<script>
+
+
+playingbtn = () =>{
+    sound = () =>{
+        let snd = new Audio('sound.mp3') 
+        snd.play()//plays the sound
+   
+    const Play1 = Math.floor(Math.random()*6)+1;
+    const Play1dice = `image/dice${Play1}.png`;
+    document.getElementById('check1').setAttribute('src',Play1dice)
+
+    //Player -2 
+    const Play2 = Math.floor(Math.random()*6)+1;
+    const Play2dice = `image/dice${Play2}.png`;
+    document.getElementById('check2').setAttribute('src',Play2dice)
+
+    if(Play1 > Play2){
+        document.querySelector('h1').innerHTML = '🎊Player - 1 Won🎊'
+    }
+    else if(Play2 > Play1){
+        document.querySelector('h1').innerHTML = '🎊Player - 2 Won🎊'
+    }
+    else{
+        document.querySelector('h1').innerHTML = `😑UPSSSS..... it's DRAW😑`
+    }
+    }
+
+};
+
+</script>
+</body>
+
+</html>

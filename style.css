@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200&family=Crimson+Text&family=EB+Garamond&family=Kalam:wght@300&family=Libre+Baskerville&family=Mate&family=Merriweather:wght@900&family=Poltawski+Nowy&family=Red+Hat+Display:wght@300&family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bitter', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mate', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Rubik', sans-serif;
+   background-color:  #182C61;
+}
+.cantainer{
+    width: 100%;
+    text-align: center;
+}
+
+.dice-box{
+    background-color: white;
+    height: 25rem;
+    width:65%;
+    margin: 60px auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+    padding: 10px;
+}
+.dice{
+    text-align: center;
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin-block: 2.3rem;
+    margin-inline: 1rem;
+}
+
+h1{
+    margin: 30px;
+    text-shadow: 3px 2px wheat;
+    font-size: 3rem;
+    color: white;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00b894;
+    text-shadow: 1px 1px black;
+    margin-block: 10px;
+}
+
+button{
+    padding: 10px;
+    width: 15%;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 1.3rem;
+}
+
+button:hover{
+    background-color: white;
+    color: #00b894;
+    border: 2px solid #00b894;
+    
+}
+
+
+img{
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
